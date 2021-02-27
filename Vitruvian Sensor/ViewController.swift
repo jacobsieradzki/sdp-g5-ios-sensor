@@ -8,21 +8,14 @@
 import UIKit
 import CoreMotion
 
-struct Reading<T> {
-	let time: Date
-	let value: T
-}
-
 class ViewController: UIViewController {
 	
 	enum State {
 		case waitingToStart, recording
 	}
 	
-	// MARK: - Private properties
-	private let motionManager = CMMotionManager()
-	private var accelerometerTest: [Reading<CMAcceleration>] = []
-	private var gyroscopeTest: [Reading<CMRotationRate>] = []
+	// MARK: - Private
+	private let sensorTestController = SensorTestController()
 	
 	// MARK: - Outlets
 	@IBOutlet private var intervalSlider: UISlider!
@@ -39,6 +32,7 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		sensorTestController.delegate = self
 		setState(.waitingToStart)
 		sliderValueDidChange(intervalSlider)
 	}
@@ -70,68 +64,36 @@ class ViewController: UIViewController {
 	// MARK: - Actions
 	
 	@IBAction private func sliderValueDidChange(_ slider: UISlider) {
+		sensorTestController.updateInterval = TimeInterval(slider.value)
 		intervalValueLabel.text = "\(slider.value) secs"
 	}
 	
 	@objc private func startUpdates() {
 		setState(.recording)
-		startAccelerometer()
-		startGyroscope()
+		sensorTestController.startTest()
 	}
 	
 	@objc private func stopUpdates() {
-		motionManager.stopAccelerometerUpdates()
-		motionManager.stopGyroUpdates()
+		let testRun = sensorTestController.stopTest()
 		setState(.waitingToStart)
-		print("Completed test with \(accelerometerTest.count) accelerometer readings and \(gyroscopeTest.count) gyroscope readings")
-	}
-	
-	// MARK: - Cmon
-	
-	private func startAccelerometer() {
-		guard motionManager.isAccelerometerAvailable else {
-			return
-		}
 		
-		accelerometerTest = []
-		motionManager.accelerometerUpdateInterval = TimeInterval(intervalSlider.value)
-		motionManager.startAccelerometerUpdates(to: .main, withHandler: didReceiveAccelerometerData)
+		print("Completed with \(testRun.accelerometerReadings.count) --- \(testRun.gyroscopeReadings.count)")
 	}
 	
-	private func startGyroscope() {
-		guard motionManager.isGyroAvailable else {
-			return
-		}
-		
-		gyroscopeTest = []
-		motionManager.gyroUpdateInterval = TimeInterval(intervalSlider.value)
-		motionManager.startGyroUpdates(to: .main, withHandler: didReceiveGyroscopeData)
-	}
-	
-	// MARK: - Data
-	
-	private func didReceiveAccelerometerData(data: CMAccelerometerData?, error: Error?) {
-		guard let data = data else {
-			return
-		}
-		
-		let reading = Reading(time: Date(), value: data.acceleration)
-		self.accelerometerTest.append(reading)
-		self.xAccelerometerLabel.text = "\(reading.value.x)"
-		self.yAccelerometerLabel.text = "\(reading.value.y)"
-		self.zAccelerometerLabel.text = "\(reading.value.z)"
-	}
-	
-	private func didReceiveGyroscopeData(data: CMGyroData?, error: Error?) {
-		guard let data = data else {
-			return
-		}
-		
-		let reading = Reading(time: Date(), value: data.rotationRate)
-		self.gyroscopeTest.append(reading)
-		self.xGyroscopeLabel.text = "\(reading.value.x)"
-		self.yGyroscopeLabel.text = "\(reading.value.y)"
-		self.zGyroscopeLabel.text = "\(reading.value.z)"
-	}
+}
 
+extension ViewController: SensorTestControllerDelegate {
+	
+	func didReceiveAccelerometerReading(reading: Reading) {
+		self.xAccelerometerLabel.text = "\(reading.x)"
+		self.yAccelerometerLabel.text = "\(reading.y)"
+		self.zAccelerometerLabel.text = "\(reading.z)"
+	}
+	
+	func didReceiveGyroscopeReading(reading: Reading) {
+		self.xGyroscopeLabel.text = "\(reading.x)"
+		self.yGyroscopeLabel.text = "\(reading.y)"
+		self.zGyroscopeLabel.text = "\(reading.z)"
+	}
+	
 }
