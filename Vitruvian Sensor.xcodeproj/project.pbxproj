@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31F7524C25EAC9BB0009D827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F7524B25EAC9BB0009D827 /* AppDelegate.swift */; };
+		31F7524E25EAC9BB0009D827 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F7524D25EAC9BB0009D827 /* SceneDelegate.swift */; };
+		31F7525025EAC9BB0009D827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F7524F25EAC9BB0009D827 /* ViewController.swift */; };
+		31F7525325EAC9BB0009D827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F7525125EAC9BB0009D827 /* Main.storyboard */; };
+		31F7525525EAC9BC0009D827 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F7525425EAC9BC0009D827 /* Assets.xcassets */; };
+		31F7525825EAC9BC0009D827 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31F7525625EAC9BC0009D827 /* LaunchScreen.storyboard */; };
+		31F7526325EAC9BC0009D827 /* Vitruvian_SensorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F7526225EAC9BC0009D827 /* Vitruvian_SensorTests.swift */; };
+		31F7526E25EAC9BC0009D827 /* Vitruvian_SensorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F7526D25EAC9BC0009D827 /* Vitruvian_SensorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31F7525F25EAC9BC0009D827 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F7524025EAC9BB0009D827 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31F7524725EAC9BB0009D827;
+			remoteInfo = "Vitruvian Sensor";
+		};
+		31F7526A25EAC9BC0009D827 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31F7524025EAC9BB0009D827 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31F7524725EAC9BB0009D827;
+			remoteInfo = "Vitruvian Sensor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31F7524825EAC9BB0009D827 /* Vitruvian Sensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vitruvian Sensor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F7524B25EAC9BB0009D827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31F7524D25EAC9BB0009D827 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		31F7524F25EAC9BB0009D827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31F7525225EAC9BB0009D827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31F7525425EAC9BC0009D827 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31F7525725EAC9BC0009D827 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31F7525925EAC9BC0009D827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F7525E25EAC9BC0009D827 /* Vitruvian SensorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vitruvian SensorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F7526225EAC9BC0009D827 /* Vitruvian_SensorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vitruvian_SensorTests.swift; sourceTree = "<group>"; };
+		31F7526425EAC9BC0009D827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F7526925EAC9BC0009D827 /* Vitruvian SensorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vitruvian SensorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F7526D25EAC9BC0009D827 /* Vitruvian_SensorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vitruvian_SensorUITests.swift; sourceTree = "<group>"; };
+		31F7526F25EAC9BC0009D827 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31F7524525EAC9BB0009D827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F7525B25EAC9BC0009D827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F7526625EAC9BC0009D827 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31F7523F25EAC9BB0009D827 = {
+			isa = PBXGroup;
+			children = (
+				31F7524A25EAC9BB0009D827 /* Vitruvian Sensor */,
+				31F7526125EAC9BC0009D827 /* Vitruvian SensorTests */,
+				31F7526C25EAC9BC0009D827 /* Vitruvian SensorUITests */,
+				31F7524925EAC9BB0009D827 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31F7524925EAC9BB0009D827 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31F7524825EAC9BB0009D827 /* Vitruvian Sensor.app */,
+				31F7525E25EAC9BC0009D827 /* Vitruvian SensorTests.xctest */,
+				31F7526925EAC9BC0009D827 /* Vitruvian SensorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31F7524A25EAC9BB0009D827 /* Vitruvian Sensor */ = {
+			isa = PBXGroup;
+			children = (
+				31F7524B25EAC9BB0009D827 /* AppDelegate.swift */,
+				31F7524D25EAC9BB0009D827 /* SceneDelegate.swift */,
+				31F7524F25EAC9BB0009D827 /* ViewController.swift */,
+				31F7525125EAC9BB0009D827 /* Main.storyboard */,
+				31F7525425EAC9BC0009D827 /* Assets.xcassets */,
+				31F7525625EAC9BC0009D827 /* LaunchScreen.storyboard */,
+				31F7525925EAC9BC0009D827 /* Info.plist */,
+			);
+			path = "Vitruvian Sensor";
+			sourceTree = "<group>";
+		};
+		31F7526125EAC9BC0009D827 /* Vitruvian SensorTests */ = {
+			isa = PBXGroup;
+			children = (
+				31F7526225EAC9BC0009D827 /* Vitruvian_SensorTests.swift */,
+				31F7526425EAC9BC0009D827 /* Info.plist */,
+			);
+			path = "Vitruvian SensorTests";
+			sourceTree = "<group>";
+		};
+		31F7526C25EAC9BC0009D827 /* Vitruvian SensorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				31F7526D25EAC9BC0009D827 /* Vitruvian_SensorUITests.swift */,
+				31F7526F25EAC9BC0009D827 /* Info.plist */,
+			);
+			path = "Vitruvian SensorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31F7524725EAC9BB0009D827 /* Vitruvian Sensor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F7527225EAC9BC0009D827 /* Build configuration list for PBXNativeTarget "Vitruvian Sensor" */;
+			buildPhases = (
+				31F7524425EAC9BB0009D827 /* Sources */,
+				31F7524525EAC9BB0009D827 /* Frameworks */,
+				31F7524625EAC9BB0009D827 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vitruvian Sensor";
+			productName = "Vitruvian Sensor";
+			productReference = 31F7524825EAC9BB0009D827 /* Vitruvian Sensor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31F7525D25EAC9BC0009D827 /* Vitruvian SensorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F7527525EAC9BC0009D827 /* Build configuration list for PBXNativeTarget "Vitruvian SensorTests" */;
+			buildPhases = (
+				31F7525A25EAC9BC0009D827 /* Sources */,
+				31F7525B25EAC9BC0009D827 /* Frameworks */,
+				31F7525C25EAC9BC0009D827 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31F7526025EAC9BC0009D827 /* PBXTargetDependency */,
+			);
+			name = "Vitruvian SensorTests";
+			productName = "Vitruvian SensorTests";
+			productReference = 31F7525E25EAC9BC0009D827 /* Vitruvian SensorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31F7526825EAC9BC0009D827 /* Vitruvian SensorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F7527825EAC9BC0009D827 /* Build configuration list for PBXNativeTarget "Vitruvian SensorUITests" */;
+			buildPhases = (
+				31F7526525EAC9BC0009D827 /* Sources */,
+				31F7526625EAC9BC0009D827 /* Frameworks */,
+				31F7526725EAC9BC0009D827 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31F7526B25EAC9BC0009D827 /* PBXTargetDependency */,
+			);
+			name = "Vitruvian SensorUITests";
+			productName = "Vitruvian SensorUITests";
+			productReference = 31F7526925EAC9BC0009D827 /* Vitruvian SensorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31F7524025EAC9BB0009D827 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					31F7524725EAC9BB0009D827 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					31F7525D25EAC9BC0009D827 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 31F7524725EAC9BB0009D827;
+					};
+					31F7526825EAC9BC0009D827 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 31F7524725EAC9BB0009D827;
+					};
+				};
+			};
+			buildConfigurationList = 31F7524325EAC9BB0009D827 /* Build configuration list for PBXProject "Vitruvian Sensor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31F7523F25EAC9BB0009D827;
+			productRefGroup = 31F7524925EAC9BB0009D827 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31F7524725EAC9BB0009D827 /* Vitruvian Sensor */,
+				31F7525D25EAC9BC0009D827 /* Vitruvian SensorTests */,
+				31F7526825EAC9BC0009D827 /* Vitruvian SensorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31F7524625EAC9BB0009D827 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F7525825EAC9BC0009D827 /* LaunchScreen.storyboard in Resources */,
+				31F7525525EAC9BC0009D827 /* Assets.xcassets in Resources */,
+				31F7525325EAC9BB0009D827 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F7525C25EAC9BC0009D827 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F7526725EAC9BC0009D827 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31F7524425EAC9BB0009D827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F7525025EAC9BB0009D827 /* ViewController.swift in Sources */,
+				31F7524C25EAC9BB0009D827 /* AppDelegate.swift in Sources */,
+				31F7524E25EAC9BB0009D827 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F7525A25EAC9BC0009D827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F7526325EAC9BC0009D827 /* Vitruvian_SensorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31F7526525EAC9BC0009D827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F7526E25EAC9BC0009D827 /* Vitruvian_SensorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31F7526025EAC9BC0009D827 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31F7524725EAC9BB0009D827 /* Vitruvian Sensor */;
+			targetProxy = 31F7525F25EAC9BC0009D827 /* PBXContainerItemProxy */;
+		};
+		31F7526B25EAC9BC0009D827 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31F7524725EAC9BB0009D827 /* Vitruvian Sensor */;
+			targetProxy = 31F7526A25EAC9BC0009D827 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31F7525125EAC9BB0009D827 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31F7525225EAC9BB0009D827 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31F7525625EAC9BC0009D827 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31F7525725EAC9BC0009D827 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31F7527025EAC9BC0009D827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31F7527125EAC9BC0009D827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31F7527325EAC9BC0009D827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAHN979S3F;
+				INFOPLIST_FILE = "Vitruvian Sensor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.springnation.Vitruvian-Sensor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		31F7527425EAC9BC0009D827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAHN979S3F;
+				INFOPLIST_FILE = "Vitruvian Sensor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.springnation.Vitruvian-Sensor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		31F7527625EAC9BC0009D827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAHN979S3F;
+				INFOPLIST_FILE = "Vitruvian SensorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.springnation.Vitruvian-SensorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vitruvian Sensor.app/Vitruvian Sensor";
+			};
+			name = Debug;
+		};
+		31F7527725EAC9BC0009D827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAHN979S3F;
+				INFOPLIST_FILE = "Vitruvian SensorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.springnation.Vitruvian-SensorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vitruvian Sensor.app/Vitruvian Sensor";
+			};
+			name = Release;
+		};
+		31F7527925EAC9BC0009D827 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAHN979S3F;
+				INFOPLIST_FILE = "Vitruvian SensorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.springnation.Vitruvian-SensorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vitruvian Sensor";
+			};
+			name = Debug;
+		};
+		31F7527A25EAC9BC0009D827 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAHN979S3F;
+				INFOPLIST_FILE = "Vitruvian SensorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.springnation.Vitruvian-SensorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vitruvian Sensor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31F7524325EAC9BB0009D827 /* Build configuration list for PBXProject "Vitruvian Sensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F7527025EAC9BC0009D827 /* Debug */,
+				31F7527125EAC9BC0009D827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F7527225EAC9BC0009D827 /* Build configuration list for PBXNativeTarget "Vitruvian Sensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F7527325EAC9BC0009D827 /* Debug */,
+				31F7527425EAC9BC0009D827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F7527525EAC9BC0009D827 /* Build configuration list for PBXNativeTarget "Vitruvian SensorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F7527625EAC9BC0009D827 /* Debug */,
+				31F7527725EAC9BC0009D827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31F7527825EAC9BC0009D827 /* Build configuration list for PBXNativeTarget "Vitruvian SensorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31F7527925EAC9BC0009D827 /* Debug */,
+				31F7527A25EAC9BC0009D827 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31F7524025EAC9BB0009D827 /* Project object */;
+}
