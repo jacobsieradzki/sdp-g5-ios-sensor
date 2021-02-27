@@ -37,9 +37,7 @@ class ViewController: UIViewController {
 		sliderValueDidChange(intervalSlider)
 	}
 	
-	// MARK: - View
-	
-	func setState(_ state: State) {
+	private func setState(_ state: State) {
 		actionButton.layer.cornerRadius = 8
 		actionButton.removeTarget(nil, action: nil, for: .allEvents)
 		
@@ -60,8 +58,25 @@ class ViewController: UIViewController {
 		}
 	}
 	
+}
+
+// MARK: - Actions
+extension ViewController {
 	
-	// MARK: - Actions
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		guard segue.identifier == "export",
+			  let navigationController = segue.destination as? UINavigationController,
+			  let viewController = navigationController.viewControllers.first as? TestRunViewController else {
+			return
+		}
+		
+		viewController.testRun = sensorTestController.testRun
+	}
+	
+}
+
+// MARK: - Actions
+extension ViewController {
 	
 	@IBAction private func sliderValueDidChange(_ slider: UISlider) {
 		sensorTestController.updateInterval = TimeInterval(slider.value)
@@ -74,10 +89,9 @@ class ViewController: UIViewController {
 	}
 	
 	@objc private func stopUpdates() {
-		let testRun = sensorTestController.stopTest()
+		sensorTestController.stopTest()
 		setState(.waitingToStart)
-		
-		print("Completed with \(testRun.accelerometerReadings.count) --- \(testRun.gyroscopeReadings.count)")
+		performSegue(withIdentifier: "export", sender: self)
 	}
 	
 }

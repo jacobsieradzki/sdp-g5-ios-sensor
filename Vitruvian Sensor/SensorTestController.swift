@@ -13,16 +13,34 @@ protocol SensorTestControllerDelegate: class {
 	func didReceiveGyroscopeReading(reading: Reading)
 }
 
+func dateToTimestamp(date: Date) -> String {
+	return "\(Int(round(date.timeIntervalSince1970 * 1000)))"
+}
+
 struct Reading {
 	let time: Date
 	let x: Double
 	let y: Double
 	let z: Double
+	
+	var timestamp: String {
+		return dateToTimestamp(date: time)
+	}
 }
 
 struct TestRun {
+	
+	enum ReadingType {
+		case accelerometer, gyroscope
+	}
+	
+	let startedAt: Date = Date()
 	var accelerometerReadings: [Reading] = []
 	var gyroscopeReadings: [Reading] = []
+	
+	var timestamp: String {
+		return dateToTimestamp(date: startedAt)
+	}
 }
 
 class SensorTestController: NSObject {
@@ -30,10 +48,10 @@ class SensorTestController: NSObject {
 	// MARK: - Public properties
 	public weak var delegate: SensorTestControllerDelegate?
 	public var updateInterval: TimeInterval = 0.25
+	private(set) var testRun = TestRun()
 	
 	// MARK: - Private properties
 	private let motionManager = CMMotionManager()
-	private var testRun = TestRun()
 	
 	// MARK: -
 	
@@ -43,6 +61,7 @@ class SensorTestController: NSObject {
 		startGyroscope()
 	}
 	
+	@discardableResult
 	func stopTest() -> TestRun {
 		motionManager.stopAccelerometerUpdates()
 		motionManager.stopGyroUpdates()
@@ -56,7 +75,6 @@ class SensorTestController: NSObject {
 			return
 		}
 		
-		testRun.accelerometerReadings = []
 		motionManager.accelerometerUpdateInterval = updateInterval
 		motionManager.startAccelerometerUpdates(to: .main, withHandler: didReceiveAccelerometerData)
 	}
@@ -66,7 +84,6 @@ class SensorTestController: NSObject {
 			return
 		}
 		
-		testRun.gyroscopeReadings = []
 		motionManager.gyroUpdateInterval = updateInterval
 		motionManager.startGyroUpdates(to: .main, withHandler: didReceiveGyroscopeData)
 	}

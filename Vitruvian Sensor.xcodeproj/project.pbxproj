@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		317BC5F225EADB780032E76E /* SensorTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BC5F125EADB780032E76E /* SensorTestController.swift */; };
+		317BC5FA25EADE460032E76E /* TestRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BC5F925EADE460032E76E /* TestRunViewController.swift */; };
+		317BC60225EAE98A0032E76E /* CSVGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BC60125EAE98A0032E76E /* CSVGenerator.swift */; };
+		317BC60725EAF0350032E76E /* ReadingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317BC60625EAF0350032E76E /* ReadingsTableViewController.swift */; };
 		31F7524C25EAC9BB0009D827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F7524B25EAC9BB0009D827 /* AppDelegate.swift */; };
 		31F7524E25EAC9BB0009D827 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F7524D25EAC9BB0009D827 /* SceneDelegate.swift */; };
 		31F7525025EAC9BB0009D827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F7524F25EAC9BB0009D827 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		317BC5F125EADB780032E76E /* SensorTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTestController.swift; sourceTree = "<group>"; };
+		317BC5F925EADE460032E76E /* TestRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRunViewController.swift; sourceTree = "<group>"; };
+		317BC60125EAE98A0032E76E /* CSVGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVGenerator.swift; sourceTree = "<group>"; };
+		317BC60625EAF0350032E76E /* ReadingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsTableViewController.swift; sourceTree = "<group>"; };
 		31F7524825EAC9BB0009D827 /* Vitruvian Sensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vitruvian Sensor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F7524B25EAC9BB0009D827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31F7524D25EAC9BB0009D827 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,10 +111,13 @@
 				31F7524D25EAC9BB0009D827 /* SceneDelegate.swift */,
 				31F7524F25EAC9BB0009D827 /* ViewController.swift */,
 				317BC5F125EADB780032E76E /* SensorTestController.swift */,
+				317BC5F925EADE460032E76E /* TestRunViewController.swift */,
+				317BC60625EAF0350032E76E /* ReadingsTableViewController.swift */,
 				31F7525125EAC9BB0009D827 /* Main.storyboard */,
 				31F7525425EAC9BC0009D827 /* Assets.xcassets */,
 				31F7525625EAC9BC0009D827 /* LaunchScreen.storyboard */,
 				31F7525925EAC9BC0009D827 /* Info.plist */,
+				317BC60125EAE98A0032E76E /* CSVGenerator.swift */,
 			);
 			path = "Vitruvian Sensor";
 			sourceTree = "<group>";
@@ -264,6 +273,9 @@
 				31F7525025EAC9BB0009D827 /* ViewController.swift in Sources */,
 				31F7524C25EAC9BB0009D827 /* AppDelegate.swift in Sources */,
 				31F7524E25EAC9BB0009D827 /* SceneDelegate.swift in Sources */,
+				317BC5FA25EADE460032E76E /* TestRunViewController.swift in Sources */,
+				317BC60225EAE98A0032E76E /* CSVGenerator.swift in Sources */,
+				317BC60725EAF0350032E76E /* ReadingsTableViewController.swift in Sources */,
 				317BC5F225EADB780032E76E /* SensorTestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
