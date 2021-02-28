@@ -84,6 +84,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31EC5DF425EBEC2F001B16AD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31F7524F25EAC9BB0009D827 /* ViewController.swift */,
+				317BC5F925EADE460032E76E /* TestRunViewController.swift */,
+				317BC60625EAF0350032E76E /* ReadingsTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		31EC5DF525EBEC40001B16AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				317BC5F125EADB780032E76E /* SensorTestController.swift */,
+				317BC60125EAE98A0032E76E /* CSVGenerator.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		31EC5DF625EBEC54001B16AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31F7525925EAC9BC0009D827 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31EC5DF725EBEC59001B16AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31F7525125EAC9BB0009D827 /* Main.storyboard */,
+				31F7525425EAC9BC0009D827 /* Assets.xcassets */,
+				31F7525625EAC9BC0009D827 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		31F7523F25EAC9BB0009D827 = {
 			isa = PBXGroup;
 			children = (
@@ -109,15 +146,10 @@
 			children = (
 				31F7524B25EAC9BB0009D827 /* AppDelegate.swift */,
 				31F7524D25EAC9BB0009D827 /* SceneDelegate.swift */,
-				31F7524F25EAC9BB0009D827 /* ViewController.swift */,
-				317BC5F125EADB780032E76E /* SensorTestController.swift */,
-				317BC60125EAE98A0032E76E /* CSVGenerator.swift */,
-				317BC5F925EADE460032E76E /* TestRunViewController.swift */,
-				317BC60625EAF0350032E76E /* ReadingsTableViewController.swift */,
-				31F7525125EAC9BB0009D827 /* Main.storyboard */,
-				31F7525425EAC9BC0009D827 /* Assets.xcassets */,
-				31F7525625EAC9BC0009D827 /* LaunchScreen.storyboard */,
-				31F7525925EAC9BC0009D827 /* Info.plist */,
+				31EC5DF425EBEC2F001B16AD /* View Controllers */,
+				31EC5DF525EBEC40001B16AD /* Controllers */,
+				31EC5DF725EBEC59001B16AD /* Resources */,
+				31EC5DF625EBEC54001B16AD /* Supporting Files */,
 			);
 			path = "Vitruvian Sensor";
 			sourceTree = "<group>";
@@ -455,7 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 945L9X66CX;
-				INFOPLIST_FILE = "Vitruvian Sensor/Info.plist";
+				INFOPLIST_FILE = "Vitruvian Sensor/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +507,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 945L9X66CX;
-				INFOPLIST_FILE = "Vitruvian Sensor/Info.plist";
+				INFOPLIST_FILE = "Vitruvian Sensor/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
